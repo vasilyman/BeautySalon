@@ -7,7 +7,8 @@ import axios from 'axios'
 Vue.config.productionTip = false
 
 const axiosInstance = axios.create({
-  baseURL: 'http://beautysalon/',
+  // baseURL: 'http://beautysalon/',
+  baseURL: '/',
   withCredentials: true,
   headers: { 'content-type': 'application/x-www-form-urlencoded' }
 })
