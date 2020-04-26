@@ -78,7 +78,7 @@ export default {
       // logout user
       this.$store.state.me = null
       Cookie.remove('me')
-      this.$router.push('/')
+      if (this.$route.path !== '/') this.$router.push('/')
     }
   }
 }
